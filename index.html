@@ -579,12 +579,14 @@
   });
 
   // ---- Resume buttons (placeholder until a real file is linked) ----
-  document.querySelectorAll('#resumeBtn, #resumeBtn2').forEach(btn=>{
-    btn.addEventListener('click', (e)=>{
-      e.preventDefault();
-      alert('Add your resume PDF and link it here — replace the href on the Resume button with the file path.');
+  // ---- Resume buttons ----
+
+document.querySelectorAll('#resumeBtn, #resumeBtn2').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open('SnehalJagtap_AIML.pdf', '_blank');
     });
-  });
+});
 
   // ---- Filter projects ----
   document.querySelectorAll('.filter-btn').forEach(btn=>{
