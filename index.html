@@ -579,12 +579,16 @@
   });
 
   // ---- Resume buttons (placeholder until a real file is linked) ----
-  // ---- Resume buttons ----
+ 
+// ---- Resume buttons ----
 
 document.querySelectorAll('#resumeBtn, #resumeBtn2').forEach(btn => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        window.open('SnehalJagtap_AIML.pdf', '_blank');
+        window.open(
+            'https://github.com/sneha-jagtap-patil/sneha-jagtap-patil/blob/main/SnehalJagtap_AIML.pdf',
+            '_blank'
+        );
     });
 });
 
